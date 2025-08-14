@@ -168,7 +168,9 @@ def delete(cafe_name): # Deletes a café using its name as a sort-of replacement
 
             cafe_table.delete().
 
-            where(cafe_table.c.cafe_name == cafe_name) # Tapping into the "cafe_name" column of the "cafe_table" to find the row that has
+            where(cafe_table.c.cafe_name == cafe_name) # Tapping into the "cafe_name" column of the "cafe_table" to find the row that has been selected by the user.
+
+            # The query is based on the name of the café that was passed as an argument when the user clicked the "delete café" button.
 
         )
 
