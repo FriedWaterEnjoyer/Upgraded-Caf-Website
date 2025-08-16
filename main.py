@@ -145,7 +145,7 @@ def add_cafe(): # Speaks for itself, takes all the inputs from the form (CafeFor
 
                 connection.commit()
 
-                return redirect("/cafes")
+            return redirect("/cafes")
 
 
     return render_template("add.html", form=form)
